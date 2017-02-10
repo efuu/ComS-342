@@ -1,0 +1,15 @@
+#lang racket
+(provide (all-defined-out))
+
+(define database-of-components
+ '((p1 200 (2 p2) (3 p3))
+  (p2 8 (2 p4))
+  (p3 60 (1 p5) (1 p6) (3 p7))
+  (p4 2)
+  (p5 2)
+  (p6 6 (1 p4) (2 p5))
+  (p7 6 (1 p5) (2 p9))
+  (p8 90 (2 p6) (1 p3))
+  (p9 2)
+  (p10 90 (4 p4) (8 p9) (3 p7))
+) )
